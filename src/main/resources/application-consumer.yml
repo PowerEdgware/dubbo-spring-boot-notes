@@ -1,0 +1,7 @@
+spring:
+  application:
+    name: dubbo-auto-configure-consumer-sample
+    
+dubbo:
+   registry:
+      address: redis://127.0.0.1:6379

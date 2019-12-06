@@ -1,0 +1,18 @@
+##dubbo demo config
+# Spring boot application
+spring:
+   application:
+      name: dubbo-auto-configuration-provider-demo
+
+# Dubbo Protocol
+dubbo:
+   application:
+      name: ${spring.application.name}
+   protocal:
+      name: dubbo
+   provider:
+      port: 9870
+   registry: # Dubbo Registry
+      address: redis://127.0.0.1:6379
+   scan: #Base packages to scan Dubbo Component: @org.apache.dubbo.config.annotation.Service
+      base-packages: com.study.provider

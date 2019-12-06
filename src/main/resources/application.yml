@@ -1,0 +1,5 @@
+
+# profiles
+spring:
+   profiles:  # consumer,provider
+      active: provider
